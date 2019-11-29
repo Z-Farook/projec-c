@@ -1,0 +1,42 @@
+// Body
+//$body-bg: #061463;
+$body-bg:#a8a6a6;
+body {
+  margin-top: 56px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  padding: 0 !important;
+}
+
+.admin-wrapper {
+  display: flex;
+  color: white;
+  .sidebar {
+    padding-top: 56px;
+    height: 100vh;
+    background-color: #1c2529;
+    .navigation {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      &-item {
+        width: 100%;
+        display: block;
+        padding: 10% 10px;
+        color: #dcdcdc;
+        text-decoration: none;
+        &:hover {
+          background-color: #313435;
+        }
+      }
+    }
+  }
+  .content {
+    padding-top: 56px;
+  }
+}
