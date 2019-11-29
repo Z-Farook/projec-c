@@ -5858,6 +5858,7 @@ process.umask = function() { return 0; };
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
 //this the routre constructer with an array of parameters
+// this is passed in Core.vue as  <router-view></router-view>
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     mode: 'history',
     routes: [{
@@ -5870,6 +5871,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
         component: __WEBPACK_IMPORTED_MODULE_13__pages_Reservations___default.a
     },
     // food and drink path
+    // this imported in the "app.js" and then passed into the "new Vue" instance with a alias named "router" after the the attibute components{...} router,
     {
         path: '/food',
         name: 'food',
@@ -56663,7 +56665,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -56676,6 +56678,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_AppFooter__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_AppFooter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_AppFooter__);
+//
 //
 //
 //
@@ -60157,7 +60160,7 @@ var render = function() {
       _c(
         "tbody",
         _vm._l(_vm.actors, function(actor) {
-          return _c("tr", [
+          return _c("tr", { key: actor.id }, [
             _c("th", [
               _vm._v(
                 _vm._s(actor.name) +
